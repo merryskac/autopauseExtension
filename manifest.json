@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Autopause",
+  "version": "1.0.0",
+  "description": "Pause YT vid using fingerpose",
+  "background":{
+    "service_worker": "background.js"
+  },
+  "action":{
+    "default_popup": "/dist/index.html"
+  },
+  "permissions":[
+    "scripting",
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions":[
+    "https://*.youtube.com/*"
+  ]
+  
+}
